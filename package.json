@@ -1,0 +1,49 @@
+{
+  "name": "wordbank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "nodemon server/server.js",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack-dev-server --open"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "build",
+      "client"
+    ]
+  },
+  "author": "xosemanolo",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "body-parser": "^1.19.0",
+    "browserify": "^10.2.4",
+    "circular-json": "^0.5.9",
+    "express": "^4.12.3",
+    "gulp": "^3.9.0",
+    "mongoose": "^5.7.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.10.2",
+    "react-dom": "^16.3.1",
+    "save": "^2.4.0",
+    "style-loader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "@webpack-cli/init": "^0.2.2",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  }
+}
